@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>SurveyForm</title>
+  </head>
+  <body>
+    <h1 id="title">DEVLOK</h1>
+    <p id="description">Thanks for helping us out!</p>
+    <div id="container">
+      <form action="" id="survey-form">
+        <fieldset>
+          <label id="name-label" for="name"
+            >Name
+            <input
+              type="text"
+              id="name"
+              placeholder="for eg: Prashant"
+              required
+          /></label>
+          <label id="email-label" for="email"
+            >Email
+            <input
+              type="email"
+              id="email"
+              placeholder="something@gamil.com"
+              required
+          /></label>
+          <label id="number-label" for="number"
+            >Age
+            <input
+              type="number"
+              min="12"
+              max="120"
+              id="number"
+              placeholder="restricted jk!"
+              required
+          /></label>
+        </fieldset>
+        <fieldset>
+          <label for="dropdown"
+            >Which option describes you the best?
+            <select name="occupation" id="dropdown">
+              <option value="">(select one)</option>
+              <option value="1">Student</option>
+              <option value="2">Teacher</option>
+              <option value="3">Teenager</option>
+              <option value="4">Gamer(Full Time)</option>
+              <option value="5">ThatGirl</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <label for="recom">Would you recommend Devlok to a friend? </label>
+          <label for="yes">
+            <input type="radio" value="yes" name="recommendation" id="yes" />
+            Definitely
+          </label>
+          <label for="maybe"
+            ><input type="radio" value="no" name="recommendation" id="maybe" />
+            Maybe
+          </label>
+          <label for="not"
+            ><input type="radio" value="no" name="recommendation" id="not" />
+            No</label
+          >
+        </fieldset>
+        <fieldset>
+          <label for="improvement">What would you like to see improved? </label>
+          <label for="2dgames">
+            <input type="checkbox" value="1" name="2D-Games" id="2dgames" /> 2D
+            GAMES
+          </label>
+          <label for="3dgames">
+            <input type="checkbox" value="2" name="2D-Games" id="3dgames" /> 3D
+            GAMES
+          </label>
+          <label for="vrgames">
+            <input type="checkbox" value="3" name="2D-Games" id="vrgames" /> VR
+            GAMES
+          </label>
+          <label for="singleplayer">
+            <input
+              type="checkbox"
+              name="2D-Games"
+              value="4"
+              id="singleplayer"
+            />
+            SINGLEPLAYER-GAMES
+          </label>
+          <label for="multiplayer">
+            <input
+              type="checkbox"
+              name="multiplayer"
+              value="5"
+              id="multiplayer"
+            />
+            MULTIPLAYER-GAMES
+          </label>
+          <label for="suggestion"
+            >Any comments or suggestion?
+            <textarea
+              name="suggestion"
+              id="comments"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </label>
+        </fieldset>
+        <input type="submit" id="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>

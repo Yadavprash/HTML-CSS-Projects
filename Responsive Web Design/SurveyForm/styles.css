@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+h1,
+p {
+  margin: 1em auto;
+  text-align: center;
+}
+#title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 36px;
+}
+#description {
+  font-family: monospace;
+  font-size: 18px;
+}
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Tahoma;
+  font-size: 16px;
+  z-index: -1;
+  background-image: url(https://i.pinimg.com/originals/6f/63/19/6f6319a00cf6cb75cd0a26f67e38290b.jpg);
+  opacity: 0.9;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+form {
+  font-family: 'Poppins', sans-serif;
+  font-size: 23px;
+  width: 80vw;
+  min-width: 300px;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2em;
+  color: #111215;
+  background-color: rgba(160, 127, 180, 0.6);
+  background-clip: padding-box;
+}
+fieldset {
+  border: none;
+  padding: 1.2rem;
+}
+fieldset:last-of-type {
+  padding-bottom: 2rem;
+}
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  font-size: 16px;
+}
+input,
+textarea {
+  background-color: #cacece;
+  border: 2px solid rgba(111, 61, 149, 0.6);
+
+  border-radius: 8px;
+}
+input:focus {
+  outline: solid 2px rgba(210, 21, 220, 0.6);
+}
+#name-label input,
+#number-label input,
+#email-label input {
+  min-height: 1.8em;
+  width: 100%;
+}
