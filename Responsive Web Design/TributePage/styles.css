@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+main {
+  background: gainsboro;
+}
+h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 50px;
+}
+#title p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#title {
+  margin: 0;
+  display: block;
+  text-align: center;
+  color: black;
+}
+#img-div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 3%;
+  padding-top: 20px;
+  padding-bottom: 12px;
+  background: white;
+}
+#image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+#img-caption {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18px;
+  margin-top: 10px;
+}
+#tribute-info p::before {
+  content: ' • ';
+}
+#tribute-info {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-bottom: 10px;
+}
+#tribute-info h2 {
+  padding-bottom: 25px;
+}
+#tribute-info h6 {
+  font-style: italic;
+  padding: 0 6%;
+  font-size: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#tribute-info p {
+  text-align: left;
+  padding-left: 20%;
+  padding-right: 10%;
+  margin-top: 20px;
+  padding-top: 10px;
+  font-size: 18px;
+}
+span {
+  font-family: monospace;
+  display: block;
+  text-align: right;
+}
